@@ -55,5 +55,34 @@
   "devDependencies": {
     "esbuild": "^0.19.0",
     "@types/vscode": "^1.70.0"
+  },
+
+
+  "keywords": [
+    "react native",
+    "stylesheet",
+    "style",
+    "style auto",
+    "inject style",
+    "StyleSheet.create",
+    "VS Code extension",
+    "rn",
+    "style generator"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devrahuljourney/rn-style-injector"
+  },
+  "bugs": {
+    "url": "hhttps://github.com/devrahuljourney/rn-style-injector/issues"
+  },
+  "homepage": "https://github.com/devrahuljourney/rn-style-injector",
+  "devDependencies": {
+    "esbuild": "^0.19.0",
+    "@types/vscode": "^1.70.0"
   }
 }
