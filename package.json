@@ -1,0 +1,59 @@
+{
+  "name": "rn-style-injector",
+  "displayName": "React Native Style Injector",
+  "description": "Injects missing styles.xyz into StyleSheet.create in React Native files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "activationEvents": [
+    "onCommand:rn-style-injector.injectStyles"
+  ],
+  "main": "./dist/extension.js",
+  "scripts": {
+    "watch": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --platform=node --watch"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "rn-style-injector.injectStyles",
+        "title": "Inject Missing React Native Styles"
+      }
+    ],
+  "contributes": {
+  "commands": [
+    {
+      "command": "rn-style-injector.injectStyles",
+      "title": "Inject Missing React Native Styles"
+    }
+  ],
+  "keybindings": [
+    {
+      "command": "rn-style-injector.injectStyles",
+      "key": "ctrl+alt+i",
+      "when": "editorTextFocus && editorLangId == javascript"
+    },
+    {
+      "command": "rn-style-injector.injectStyles",
+      "key": "ctrl+alt+i",
+      "when": "editorTextFocus && editorLangId == javascriptreact"
+    },
+    {
+      "command": "rn-style-injector.injectStyles",
+      "key": "ctrl+alt+i",
+      "when": "editorTextFocus && editorLangId == typescriptreact"
+    },
+    {
+      "command": "rn-style-injector.injectStyles",
+      "key": "cmd+alt+i",
+      "when": "editorTextFocus && isMac"
+    }
+  ]
+}
+
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.0",
+    "@types/vscode": "^1.70.0"
+  }
+}
